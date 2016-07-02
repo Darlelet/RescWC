@@ -7,7 +7,7 @@ RescWC alias Rescue Web Console is a web application you can simply run using a 
 
 # Installation
 ATM, just clone the repo or download the archive, and set appropriated permissions for your webserver to access the files.
-A GO binary as well as .ini configuration file are on their way to improve RescWC usability. :-)
+A GO binary as well as .ini configuration file are on their way to improve RescWC usability. :smile:
 
 # Features
 You can execute any command, and have the associated output on the page, as long as it's a none-continous program: if so, the command will simply timeout after 5 seconds, because the output isn't real time synced, but is buffered and thus wait for the program to end before displaying it (Refer to PHP exec/system/... functions).
@@ -16,4 +16,4 @@ You can execute any command, and have the associated output on the page, as long
 Made using <a href="http://semantic-ui.com">Semantic UI</a> (front end)
 
 # License
-RescWC is under MIT license so feel free to use the code the way you want!
+RescWC is under MIT license so feel free to use the code the way you want! :stuck_out_tongue_winking_eye:
