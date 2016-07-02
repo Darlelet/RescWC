@@ -1,0 +1,28 @@
+.noselect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+#result {
+  overflow: auto;
+  overflow-y: hidden;
+}
+
+pre .line-number {
+  font:normal normal 14px/16px;
+  color:orange;
+  display:block;
+  float:left;
+  margin:0 1em 0 -1em;
+  border-right:1px solid;
+  text-align:right;
+}
+
+pre .line-number span {
+  display:block;
+  padding:0 .5em 0 1em;
+}
