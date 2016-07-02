@@ -1,8 +1,9 @@
 # RescWC
 RescWC alias Rescue Web Console is a web application you can simply run using a GO binary, allowing you to have a backup console from the web
 
-![alt tag]https://github.com/Darlelet/RescWC/blob/master/img/demo.png
-*Screenshot of the current release*
+![alt tag](https://github.com/Darlelet/RescWC/blob/master/img/demo.png)
+![alt tag](https://github.com/Darlelet/RescWC/blob/master/img/cliboard.png)
+*Screenshots of the current release*
 
 # Installation
 ATM, just clone the repo or download the archive, and set appropriated permissions for your webserver to access the files.
