@@ -1,4 +1,4 @@
-<?php include 'header.php'; ?>
+<?php include 'php/header.php'; ?>
 <header>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
@@ -38,12 +38,7 @@
 </pre>
 </div>
 </body>
-<footer><center>
-  <div class="ui red segment">
-    Made in <i class="france flag"></i>by <a target="_blank" href="https://twitter.com/Darlelet">Darlelet</a> using <a href="http://semantic-ui.com">Semantic UI</a>
-    | Just having fun w/ LINUX commands (could be used as a rescue console)
-  </div>
-</center></footer>
+<?php include 'php/footer.php'; ?>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
 <script src="semantic/dist/semantic.min.js"></script>
-<script src="process.js"></script>
+<script src="js/process.js"></script>

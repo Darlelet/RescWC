@@ -3,7 +3,7 @@ var exec_command = function(command) {
   $("#result").append('<div id="loader" class="ui active dimmer"><div class="ui loader"></div></div>');
   $.ajax({
       type: "POST",
-      url: 'exec.php',
+      url: 'php/exec.php',
       data: {command_input: command},
       timeout: 5000,
       success: function(data){
