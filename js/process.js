@@ -11,7 +11,7 @@ var exec_command = function(command) {
         $("#previous").text(command);
         $("#command_input").val("");
         $("#streak").text(Number($("#streak").text()) + 1);
-        line_num();
+        log_file(0, data, line_num());
       },
       error: function() {
         $("#result").text("Error: command timed out: " + command);
@@ -19,6 +19,18 @@ var exec_command = function(command) {
       }
   });
 };
+
+var log_file = function(type, output, lines) {
+$.ajax({
+      type: "POST",
+      url: 'php/log.php',
+      data: {type, output, lines},
+      success: function(data){
+        $("#nb_log").text(data);
+      }
+  });
+};
+log_file(1, "", 0);
 
 $("#command_input").keypress(function(e) {
     if (e.which == 13) exec_command($("#command_input").val());
@@ -32,6 +44,10 @@ $("#prev-button").click(function() {
 $("#copy_result").click(function() {
   ToClipboard('#result');
   $('#copy_message').modal('show');
+});
+$("#clear_log").click(function() {
+  log_file(2, "", 0);
+  $("#result").html("Nothing to show ATM");
 });
 
 update();
@@ -52,6 +68,7 @@ function line_num() {
             line_num.innerHTML += '<span class="noselect">' + (j + 1) + ' </span>';
         }
     }
+    return j;
 }
 
 function ToClipboard(to_copy) {

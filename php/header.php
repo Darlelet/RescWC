@@ -1,5 +1,6 @@
 <?php
-  echo '<button class="fluid ui inverted red button">' .
+  echo '<div class="fluid ui buttons"><button class="ui black button">' .
   posix_getpwuid(posix_geteuid())['name'] . '@' .
-  gethostname() . "_-_" . '<span id="time" style="position: absolute;"></span></button>';
+  gethostname() . '</button><div class="or" data-text="$>"></div>' .
+  '<button id="time" class="ui violet button"></button></div>';
 ?>
