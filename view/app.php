@@ -14,17 +14,7 @@
   <i class="icon external"></i>
   Copy the command output
 </button>
-<button id="download_log" class="ui basic button">
-  <i class="icon download"></i>
-  Download the log file
-  <div class="ui black label">
-    <i class="list icon"></i> <span id="nb_log"></span>
-  </div>
-</button>
-<button id="clear_log" class="ui negative button">
-  <i class="icon erase"></i>
-  Clear the log file
-</button>
+<?php if ($opt['enable_log']) include 'view/log_buttons.php'; ?>
 <div id="copy_message" class="ui basic modal">
   <div class="ui icon header">
     <i class="icon external"></i>
