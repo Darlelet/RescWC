@@ -1,8 +1,8 @@
 # RescWC
 RescWC alias Rescue Web Console is a web application you can simply run using your favorite web server, allowing you to have a backup console from the web
 
-![alt tag](https://raw.githubusercontent.com/Darlelet/RescWC/master/img/demo.png?token=AGO2LdR8qbDayhuvmmlGBmaSXoCag167ks5XgP5TwA%3D%3D)
-![alt tag](https://raw.githubusercontent.com/Darlelet/RescWC/master/img/clipboard.png?token=AGO2Lb8Z7CHpfVQbnK7YxdKD8OPdwde1ks5XgP5vwA%3D%3D)
+![alt tag](https://github.com/Darlelet/RescWC/blob/master/img/clipboard.png)
+![alt tag](https://github.com/Darlelet/RescWC/blob/master/img/demo.png)
 *Screenshots of the current release*
 
 ## Installation
@@ -17,12 +17,9 @@ Nevertheless, if you need to run this type of commands, hopefully you can actual
 3. Add the following stuff below it: 
 
 ```
-www-data ALL=(ALL) NOPASSWD:/path/to/binary:/path/to/binary2 *(...)*
+www-data ALL=(ALL) NOPASSWD:/path/to/binary:/path/to/binary2 (...)
 ```
-*(OR)* 
-```
-www-data ALL=(ALL) youcustompasswordforsecurityissue:/path/to/binary:/path/to/binary2
-```
+
 -> Where binary stands for the executable binary you want to be able to run from the www-data user (thus, RescWC)
 
 
