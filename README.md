@@ -1,13 +1,13 @@
 # RescWC
 RescWC alias Rescue Web Console is a web application you can simply run using your favorite web server, allowing you to have a backup console from the web
 
-![alt tag](https://raw.githubusercontent.com/Darlelet/RescWC/master/img/demo.png?token=AGO2LdR8qbDayhuvmmlGBmaSXoCag167ks5XgP5TwA%3D%3D)
-![alt tag](https://raw.githubusercontent.com/Darlelet/RescWC/master/img/clipboard.png?token=AGO2Lb8Z7CHpfVQbnK7YxdKD8OPdwde1ks5XgP5vwA%3D%3D)
+![alt tag](https://github.com/Darlelet/RescWC/blob/master/img/demo.png)
+![alt tag](https://github.com/Darlelet/RescWC/blob/master/img/clipboard.png)
+
 *Screenshots of the current release*
 
 ## Installation
-ATM, just clone the repo or download the archive, and set appropriated permissions for your webserver to access the files.
-Additional features as well as a .ini configuration file are on their way to improve RescWC usability. :smile:
+Just clone the repo or download the archive, and set appropriated permissions for your webserver to access the files. :smile:
 
 ## Configuration
 By default most web servers run php scripts via *www-data* user, preventing you from using powerful commands.
@@ -18,16 +18,13 @@ Nevertheless, if you need to run this type of commands, hopefully you can actual
 3. Add the following stuff below it: 
 
 ```
-www-data ALL=(ALL) NOPASSWD:/path/to/binary:/path/to/binary2 *(...)*
+www-data ALL=NOPASSWD: /path/to/binary, /path/to/binary2 (...)
 ```
-*(OR)* 
-```
-www-data ALL=(ALL) youcustompasswordforsecurityissue:/path/to/binary:/path/to/binary2
-```
+
 -> Where binary stands for the executable binary you want to be able to run from the www-data user (thus, RescWC)
 
 
-> Finally, in the settings.ini file specify **'enable'** next to the **'use sudo'** statement, and specify the **password** you just set (if you didn't use NOPASSWD as shown in the example)
+> Finally, in the conf.php file specify **'yes'** next to the **'use_sudo'** statement, and specify the **password** you just set (if you didn't use NOPASSWD as shown in the example). Don't forget to adjust the file to fit your needs.
 
 ## Features
 You can execute any command, and have the associated output on the page, as long as it's a none-continous program: if so, the command will simply timeout after 5 seconds, because the output isn't real time synced, but is buffered and thus wait for the program to end before displaying it (Refer to PHP exec/system/... functions).
