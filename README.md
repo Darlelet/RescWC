@@ -26,8 +26,10 @@ www-data ALL=NOPASSWD: /path/to/binary, /path/to/binary2 (...)
 
 > Finally, in the conf.php file specify **'yes'** next to the **'use_sudo'** statement, and specify the **password** you just set (if you didn't use NOPASSWD as shown in the example). Don't forget to adjust the file to fit your needs.
 
+NB: If you plan on using a log file (enable_log & log_file in **conf.php**), remember to create it and make sure the running user (often www-data) has **rw** (Read & Write) access to it ! :wink:
+
 ## Features
-You can execute any command, and have the associated output on the page, as long as it's a none-continous program: if so, the command will simply timeout after 5 seconds, because the output isn't real time synced, but is buffered and thus wait for the program to end before displaying it (Refer to PHP exec/system/... functions).
+You can execute any command, and have the associated output on the page, as long as it's a none-continous program: if so, the command will simply timeout after 5 seconds, because the output isn't real time synced, but is buffered and thus wait for the program to end before displaying it (Refer to PHP exec/system/(...) functions).
 
 ## Credits
 Made using <a href="http://semantic-ui.com">Semantic UI</a> (front end)
