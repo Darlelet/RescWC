@@ -18,7 +18,7 @@ Nevertheless, if you need to run this type of commands, hopefully you can actual
 3. Add the following stuff below it: 
 
 ```
-www-data ALL=(ALL) NOPASSWD:/path/to/binary:/path/to/binary2 (...)
+www-data ALL=NOPASSWD: /path/to/binary, /path/to/binary2 (...)
 ```
 
 -> Where binary stands for the executable binary you want to be able to run from the www-data user (thus, RescWC)
