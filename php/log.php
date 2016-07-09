@@ -1,5 +1,7 @@
 <?php
 include 'options.php';
+
+if (!$opt['enable_log']) return ;
 if (!isset($opt['log_history']) || $opt['log_history'] < 0 || $opt['log_history'] > 1000000) {
   echo 'log_history variable must be positive and smaller or equal to 1 000 000';
   echo $opt['general']['log_history'];

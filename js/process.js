@@ -49,11 +49,14 @@ $("#clear_log").click(function() {
   log_file(2, "", 0);
   $("#result").html("Nothing to show ATM");
 });
+$("#download_log").click(function() {
+  window.location.replace("php/download.php");
+});
 
 update();
 function update() {
 $("#time").text(new Date().toTimeString().split(" ")[0]);
-window.setTimeout(update, 100);
+window.setTimeout(update, 1000);
 }
 
 line_num();
