@@ -4,7 +4,7 @@
   <i class="<?php echo ($nauth) ? 'ban' : 'protect'; ?> icon"></i>
   <div class="content">
     <div class="header">
-      <?php echo ($nauth) ? 'Invalid username or password' : 'No so fast! You need to login first'; ?>
+      <?php echo ($nauth) ? 'Invalid username or password' : 'Not so fast! You need to login first'; ?>
     </div>
     <p><?php echo ($nauth) ? 'Please correct your credentials' :
     'Just use the credentials you set earlier in the <u>conf.php</u> file'; ?></p>
