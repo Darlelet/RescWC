@@ -1,8 +1,9 @@
 # RescWC
 RescWC alias Rescue Web Console is a web application you can simply run using your favorite web server, allowing you to have a backup console from the web
 
-![alt tag](https://github.com/Darlelet/RescWC/blob/master/img/clipboard.png)
 ![alt tag](https://github.com/Darlelet/RescWC/blob/master/img/demo.png)
+![alt tag](https://github.com/Darlelet/RescWC/blob/master/img/clipboard.png)
+
 *Screenshots of the current release*
 
 ## Installation
