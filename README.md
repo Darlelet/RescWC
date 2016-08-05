@@ -24,7 +24,7 @@ www-data ALL=NOPASSWD: /path/to/binary, /path/to/binary2 (...)
 -> Where binary stands for the executable binary you want to be able to run from the www-data user (thus, RescWC)
 
 
-> Finally, in the conf.php file specify **'yes'** next to the **'use_sudo'** statement, and specify the **password** you just set (if you didn't use NOPASSWD as shown in the example). Don't forget to adjust the file to fit your needs.
+> Finally, in the conf.php file specify **'yes'** next to the **'use_sudo'** statement. Don't forget to adjust the file to fit your needs.
 
 NB: If you plan on using a log file (enable_log & log_file in **conf.php**), remember to create it and make sure the running user (often www-data) has **rw** (Read & Write) access to it! :wink:
 
