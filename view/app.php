@@ -18,7 +18,7 @@
 <div id="copy_message" class="ui basic modal">
   <div class="ui icon header">
     <i class="icon external"></i>
-    Command output successfuly copied to clipboard
+    Command output successfully copied to clipboard
   </div>
   <div class="actions">
     <div class="ui green ok inverted button">
